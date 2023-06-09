@@ -84,12 +84,18 @@
 .socials li {
   border: 1px solid var(--zinc-200);
   border-radius: var(--border-radius-6);
+  overflow: hidden;
 }
 
 .socials a {
   color: var(--zinc-600);
   display: block;
   padding: var(--space-3) var(--space-3);
+  transition: 150ms all;
+}
+
+.socials a:hover {
+  background: var(--zinc-100);
 }
 
 @media(--md) {
@@ -119,6 +125,11 @@
   display: flex;
   gap: var(--space-4);
   padding: var(--space-3) var(--space-4);
+  transition: 150ms all;
+}
+
+.links a:hover {
+  background: var(--zinc-100);
 }
 
 .links img {
